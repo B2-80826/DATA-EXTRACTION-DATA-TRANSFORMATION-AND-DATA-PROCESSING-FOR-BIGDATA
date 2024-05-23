@@ -75,28 +75,3 @@ query = df.writeStream.format("parquet")\
 
 query.awaitTermination()
 
-
-
-#
-# query = df \
-#     .writeStream \
-#     .outputMode("append") \
-#     .format("console") \
-#     .start()
-
-
-# Use "parquet" format for writing to disk
-      # Specify the directory where data will be stored
-
-# query =
-
-
-
-# hdfc_write_path =
-# df.coalesce(1).write.option("header",True)\
-#     .parquet("hdfs://localhost:9000/user/etlproject", mode='append')
-
-# def store_dfs():
-
-# command to submit file on command line
-# spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 SparkConsumer.py
