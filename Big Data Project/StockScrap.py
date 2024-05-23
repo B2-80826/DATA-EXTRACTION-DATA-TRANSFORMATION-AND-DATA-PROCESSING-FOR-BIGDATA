@@ -30,18 +30,6 @@ def list_data_dump():
     final_list.pop(0)
 
 
-# def csv_data_dump(index):
-#     print(final_list[0].values())
-#     fieldnames = final_list[0].keys()
-#     with open('bajaj_finserv.csv', 'a', newline='') as csvfile:
-#         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-#         # Check if the file is empty to determine whether to write the header
-#         if csvfile.tell() == 0:
-#             writer.writeheader()
-#         writer.writerows(final_list)
-#         send_message(topic_name, final_list[0])
-#         final_list.pop(0)
-#
 
 def bajaj_finance_data(index):
     # Find an element by its ID and click it
@@ -121,35 +109,7 @@ def bajaj_finance_data(index):
         "Date": date_str,
         "Time": time_str
     })
-    # values_list.append([
-    #     element.text,
-    #     DATA[2].text,
-    #     DATA[3].text,
-    #     DATA[4].text,
-    #     DATA[5].text,
-    #     DATA[6].text,
-    #     DATA[7].text,
-    #     DATA[8].text,
-    #     DATA[9].text,
-    #     DATA[10].text,
-    #     DATA[11].text,
-    #     DATA[12].text,
-    #     DATA[13].text,
-    #     DATA[14].text,
-    #     DATA[15].text,
-    #     recommend.text,
-    #     strong_buy_analyst_value[1].text,
-    #     buy_analyst_value[1].text,
-    #     hold_analyst_value[1].text,
-    #     sell_analyst_value[1].text,
-    #     strong_sell_analyst_value[1].text,
-    #     date_str,
-    #     time_str
-    # ]
-    # )
-
-    # print(final_list)
-    # print(values_list)
+ 
     print()
     print()
 
